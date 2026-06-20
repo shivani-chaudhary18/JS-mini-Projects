@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .card {
+  text-align: center;
+  width: 330px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+main img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+main h2 {
+  font-size: 18px;
+  margin-top: 5px;
+  white-space: nowrap;
+  font-weight: 300;
+}
+main h3 {
+  font-size: 25px;
+  white-space: nowrap;
+}
+main h4 {
+  font-size: 25px;
+  white-space: nowrap;
+  color: crimson;
+  margin-top: 10px;
+}
+main h5 {
+  font-size: 20px;
+  white-space: nowrap;
+  margin-top: 10px;
+  font-weight: 300;
+}
+main p {
+  font-size: 14px;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
