@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+     #pianoKeys-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;position: relative;
+        cursor: pointer;
+           
+         .keyWhite{
+            background-color: white;
+            height: 250px;
+            width: 42px;
+            border: 2px solid black;
+            position: relative;
+
+                &::after{
+                    content: attr(key-note);
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+         }
+
+         .keyBlack{
+            position: absolute;
+            width: 25px;
+            height: 150px;
+            background: black;
+            z-index: 10;
+            top: 0;
+            position: absolute;
+
+                 &::after {
+                     content: attr(key-note);
+                     position: absolute;
+                     bottom: 10px;
+                     left: 50%;
+                     transform: translateX(-50%);
+                     color: white;
+                    }
+
+         }
+
+
+         /* ---------- 1st Octave ---------- */
+
+        .keyBlack:nth-child(2) { left: 30px; }
+        .keyBlack:nth-child(4) { left: 72px; }
+        .keyBlack:nth-child(7) { left: 156px; }
+        .keyBlack:nth-child(9) { left: 198px; }
+        .keyBlack:nth-child(11) { left: 240px; }
+
+        /* ---------- 2nd Octave ---------- */
+
+        .keyBlack:nth-child(14) { left: 324px; }
+        .keyBlack:nth-child(16) { left: 366px; }
+        .keyBlack:nth-child(19) { left: 450px; }
+        .keyBlack:nth-child(21) { left: 492px; }
+        .keyBlack:nth-child(23) { left: 534px; }
+
+        /* ---------- 3rd Octave ---------- */
+
+        .keyBlack:nth-child(26) { left: 618px; }
+        .keyBlack:nth-child(28) { left: 660px; }
+        .keyBlack:nth-child(31) { left: 744px; }
+        .keyBlack:nth-child(33) { left: 786px; }
+        .keyBlack:nth-child(35) { left: 828px; }
+
+        /* ---------- 4th Octave ---------- */
+
+        .keyBlack:nth-child(38) { left: 912px; }
+        .keyBlack:nth-child(40) { left: 954px; }
+        .keyBlack:nth-child(43) { left: 1038px; }
+        .keyBlack:nth-child(45) { left: 1080px; }
+        .keyBlack:nth-child(48) { left: 1164px; }
+
+        /* ---------- 5th Octave ---------- */
+
+        .keyBlack:nth-child(51) { left: 1248px; }
+        .keyBlack:nth-child(53) { left: 1290px; }
+        .keyBlack:nth-child(56) { left: 1374px; }
+        .keyBlack:nth-child(58) { left: 1416px; }
+        .keyBlack:nth-child(60) { left: 1458px; }
+
+
+        .keyWhite.active {
+          background-color: #d9d9d9;
+          transform: translateY(4px);
+         transition: all 0.1s ease;
+}
+
+.keyBlack.active {
+      background-color: #444;
+    transform: translateY(4px);
+    transition: all 0.1s ease;
+}
+     }
+}
